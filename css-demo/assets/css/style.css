@@ -1,0 +1,29 @@
+/*this is a comment*/
+/* --- CSS Demo --- */
+
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  } 
+  /* ---------Global Styles--------*/
+  body{
+    font-family: "Fredoka", sans-serif;/*Font family, set of fall backs*/
+  } /*will cascade down to the entire body*/
+
+  header.primary{
+
+  }/* allows us to tag a tag and the dot allows for us to take it when it has class "primary*/
+  
+  
+  /*Color theme
+    #29C4E3
+    #294EE3
+    #2989E3
+    #29E3C5
+    #3F29E3
+  */
+
