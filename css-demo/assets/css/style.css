@@ -8,16 +8,50 @@ html {
   *:before,
   *:after {
     box-sizing: inherit;
-  } 
+  } /*the way block elemets are postitioned are as follows: margin, border, padding, and content (outside in)*/
+
   /* ---------Global Styles--------*/
   body{
     font-family: "Fredoka", sans-serif;/*Font family, set of fall backs*/
+    margin: 1px; /*sets the amount of pxels its awa from the edge*/
+
   } /*will cascade down to the entire body*/
 
-  header.primary{
-
+  header.primary{ /*<--targeter*/
+    background-color:#29C4E3 ;
+    color:rgb(255, 255, 255); /*will change all elements colors inside the color*/
+    text-align: center;
+    text-shadow: 3px 3px #000000; /*1st value is x ofset, 2nd is y, third is blur (if there), color at the end*/
+    padding: 30px; 
+    /*long form
+    pading-top
+    padding-right
+    padding-bottom
+    padding-left (goes clockwise)
+    or padding: 20 40 20 40*/
   }/* allows us to tag a tag and the dot allows for us to take it when it has class "primary*/
-  
+
+ header.primary h1
+  { /*very specific selectr (over qualified selector)*/
+    font-size: 3.2rem ;
+    margin: 20px 0px 0px;
+  }
+header.primary h1 a
+{
+  color:ghostwhite;
+  text-decoration: none;
+}
+header.primary h2
+  {
+  margin: 10px;
+  }
+
+  header.primary nav{
+  max-width: 900px;
+  background:#29C4E3;
+  margin: 20px auto;
+
+  }
   
   /*Color theme
     #29C4E3
@@ -27,3 +61,28 @@ html {
     #3F29E3
   */
 
+header.primary ul{
+  margin: 5px;
+  padding: 15px;; /*takes out bullets that were there on the unordered list)*/
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+header.primary ul li{
+  list-style-type: none;
+}
+
+header.primary nav a{
+  color: #ffff;
+  text-decoration: none;
+  background-color: #000000;
+  padding: 10px 15px;
+  border-radius: 15px;
+  border: 8px double #2989E3;
+  transition: 1s;
+}
+ 
+header.primary nav a:hover{
+  background-color: rgba(0, 0 , 0, .8);
+}
