@@ -1,3 +1,91 @@
+/*color scheme*/
+/*#DBE2E4
+#219EC0
+#15667C
+#0F4A5A
+*/
+
+
+
+/*---- Global Styles ----*/
+
+
 body{
-    background-color:aqua;
+    background-color:#DBE2E4;
+    font-family: "Roboto Slab", serif
+}
+
+header .title{
+    color:#fff;
+    text-align: left ;
+    background-color:#219EC0;
+    padding: 25px;
+    margin:0%
+}
+
+h2.social{
+    text-align: center;
+    color: #DBE2E4;
+    text-decoration:underline
+}
+
+nav.social ul{
+    background-color: #219EC0;
+    margin: 15px;
+    padding: 15px;; 
+    display: flex;
+    justify-content:center;
+}
+
+.column{
+    text-align: center;
+    background-color: #219EC0;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #DBE2E4;
+    text-decoration: underline;
+}
+
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33%;
+  }
+
+nav.social ul li{
+    text-align: center;
+    max-width: 200px;
+    margin: 15px;
+    color:#000;
+    list-style-type: none;
+    text-decoration: none;
+    background-color: #0F4A5A;
+    padding: 15px 40px 15px 40px;
+    border-radius: 10px;
+    border: 6px dashed #15667C;
+    transition: 1s;
+}
+
+ h2.clas ul{
+    margin: 15px;
+    padding: 15px;; 
+    display: flex;
+    justify-content:center;
+ }
+
+  .column ul li{
+    text-align: center;
+    max-width: 200px;
+    list-style-type: none;
+    text-decoration: none;
+    margin-left: 80px;
+    margin-top: 10px;
+    background-color: #DBE2E4;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   border-radius: 5px;
+   border: 6px double #219EC0;
 }

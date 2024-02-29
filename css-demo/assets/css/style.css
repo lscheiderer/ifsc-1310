@@ -10,6 +10,41 @@ html {
     box-sizing: inherit;
   } /*the way block elemets are postitioned are as follows: margin, border, padding, and content (outside in)*/
 
+
+/*-----Responsive Images----*/
+img{
+  max-width: 100%;
+}
+
+
+
+/* ------ Utility Classes ----- */
+
+.container{
+  max-width: 950px; /*neer gets over than this value*/
+  width:80vw;
+  margin: 50px auto;
+}
+
+.img-right{
+  float:right; /*allows content to wrap around image*/
+  margin: 10px 0 10px 20px;
+  border:1px solid #c0c0c0;
+  padding:5px;
+  border-radius:50px; 
+}
+
+.img-left{
+  float:left;
+  margin: 10px 0 10px 20px;
+  border:1px solid #c0c0c0;
+  padding:5px;
+  border-radius:50px;
+}
+
+
+
+
   /* ---------Global Styles--------*/
   body{
     font-family: "Fredoka", sans-serif;/*Font family, set of fall backs*/
@@ -18,7 +53,7 @@ html {
   } /*will cascade down to the entire body*/
 
   header.primary{ /*<--targeter*/
-    background-color:#29C4E3 ;
+    background-color:#3f2adc ;
     color:rgb(255, 255, 255); /*will change all elements colors inside the color*/
     text-align: center;
     text-shadow: 3px 3px #000000; /*1st value is x ofset, 2nd is y, third is blur (if there), color at the end*/
@@ -63,14 +98,14 @@ header.primary h2
 
 header.primary ul{
   margin: 5px;
-  padding: 15px;; /*takes out bullets that were there on the unordered list)*/
+  padding: 15px;; 
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
 header.primary ul li{
-  list-style-type: none;
+  list-style-type: none; /*takes out bullets that were there on the unordered list)*/
 }
 
 header.primary nav a{
@@ -86,3 +121,147 @@ header.primary nav a{
 header.primary nav a:hover{
   background-color: rgba(0, 0 , 0, .8);
 }
+
+#content{
+  line-height:1.5;
+}
+
+#content h2{ /*only targets the stuff with content id in h2*/
+  color:#294EE3;
+  border-bottom: 2px, dotted , #29C4E3;
+}
+
+#content h3{
+  border-left: 8px solid #2989E3;
+  padding:7.5px;
+}
+
+#blog{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+  gap:2rem;
+  border-bottom: 1px dotted blue;
+  border-top: 2px solid lightblue;
+  padding: 4rem 0; /*padding: "top and bottom" and "left and right"*/
+}
+
+#blog .post{ /*space means there is a class post inside of blog*/
+  box-shadow: 0 8px 16px rgba(0,0,0, .6);
+  padding: 10px;
+  border-radius: 3px;
+  font-size: .8rem;
+}
+
+#blog figure{
+  margin:0;
+}
+
+#blog figcaption{
+  text-transform:uppercase;
+  font-size:.6rem;
+  text-align:center;
+  color:#c0c0c0;
+}
+
+/* converts the site to be mobile friendly*/ 
+  
+  header.primary nav a{
+    display: block;
+  } /*displays the in line li to block*/
+
+  #blog header{
+    padding-top:10px;
+    font-size:.6rem;
+    color:#c0c0c0;
+  }
+  
+  #blog header h2{
+    margin:0;
+  }
+  
+  #blog .post:hover{
+    box-shadow: 0 8px 16px rgba(0,0,0,.6);
+  }
+
+  table{
+    border: 2px dashed #000000;
+    width: 100%;
+    margin: 25px;
+    border-collapse: collapse;
+  }
+  caption{
+    font-weight: bold;
+    margin: 15px;
+  }
+  th{
+    background-color: #29C4E3;
+    color: #fff;
+    padding: 8px;
+  }
+  tr:nth-child(even){
+    background-color: rgba(0, 0 , 0, .3);
+  }
+  td{
+    border: 1.5px dashed #000;
+    padding:4px;
+  }
+  
+  aside[role="complementary"]{
+    background-color: #3f2adc;
+    color:#ffffff;
+    padding:3.2rem;
+  }
+
+  aside .cotainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  aside .container a{
+    color: #ffffff;
+  }
+
+  aside .container a:last-of-type{
+    display: block;
+    text-align: right;
+  }
+
+  aside .widget footer{
+    display:none;
+  }
+
+  #colophon{
+    background-color: #294EE3;
+    text-align: center;
+    padding: 15px;
+    color: #fff;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media screen and (max-width: 600px) {
+    header.primary ul {
+      flex-direction: column;
+      gap:10px;
+      max-width:250px;
+      margin:auto;
+    }
+    header.primary nav a{
+      display:block;
+    }
+  }
+
