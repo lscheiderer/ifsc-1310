@@ -207,6 +207,47 @@ header.primary nav a:hover{
     padding:4px;
   }
   
+  #practice ol{
+    list-style-type:lower-decimal;  /*can be replaced with emojis and other character*/
+  list-style-position: outside; /*used to tell whether the tags such as numbers, is included in the block element*/
+  }
+
+  #practice ul ul /*unordered inside an unordered, with practice ID*/
+  {
+    list-style-type: square;
+  }
+
+  #practice dl dt{
+    font-weight: bold; /*bold (duh)*/
+  }
+
+  dl dd{
+    margin:0;
+  }
+
+  dd + dt{
+    margin-top: 1rem;
+  }
+
+
+  #practice blockquote{
+    border: 4px double #c0c0c0;
+    padding: 20px 40px;
+    margin: 40px 80px;
+    border-radius: 30px 0;
+    background-color: #3b638b;
+    color: #ffffff;
+    line-height: 1.4;
+    text-shadow: 1px 1px #000;
+  }
+
+#practice blockquote cite{
+  display: block;
+  text-align: right;
+  font-size: .7rem;
+  margin-top: 1rem;
+}
+
   aside[role="complementary"]{
     background-color: #3f2adc;
     color:#ffffff;
