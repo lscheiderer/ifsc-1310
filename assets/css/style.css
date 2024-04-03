@@ -35,20 +35,22 @@ background-color: #15667C;
 }
 
 header .title h1{
+    position: relative;
     display: block;
     grid-column: 1;
     grid-row: 1;
+    height:600px;
     color:#fff;
     background-color:#15667C;
 }
 
 
 header img{
-    display: flex;
+
     max-width: 400px;
     grid-column: 2;
     grid-row: 1;
-    justify-content: end;
+   
 }
 
 
