@@ -5,39 +5,50 @@
         <meta charset="utf-8" /> <!--wanted to add foreign tags-->
         <meta name="author" content="Logan Scheiderer" /><!--who created the website-->
         <meta name="description" content="SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets." /> <!--the discription of what the link is-->
+        <link href="/dragon/assets/css/style.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&display=swap" rel="stylesheet">
         <meta name="robots" content="noindex">
     </head>
     
         <body>
         <main>
-            <header>
-                <h1> SpaceX Dragon Vehicle Overview: </h1>
-            </header>
-
             <nav>
                 <ul>
-                    <li><a href = "/dragon/history.html"> History </a></li>
-                    <li><a href = "/dragon/faqs.html"> FAQs </a></li>
+                    <li id="history"><a href = "/dragon/history.html"> History </a></li>
+                    <li id="faqs"><a href = "/dragon/faqs.html"> FAQs </a></li>
                 </ul>
             </nav>
 
+
+            <img id="logoi" src="assets/imgs/SpaceX-Logo.png" alt="logo"/>
+            <header>
+                <h1 id="title"> SpaceX Dragon Vehicle Overview </h1>
+            </header>
+
+
+            <div id="description">
             <content id="Description">
-                <h3 id="title">Description: </h3>
+                <h3 id="title">Description </h3>
                 <p>Dragon is a free-flying spacecraft designed to deliver both cargo and people to orbiting destinations. Dragon made history in 2012 when it became the first commercial spacecraft in history to deliver cargo to the International Space 
                     Station and safely return cargo to Earth, a feat previously achieved only by governments. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth. Currently Dragon carries cargo to 
                     space, but it was designed from the beginning to carry humans. Under an agreement with NASA, SpaceX is now developing the refinements that will enable Dragon to fly crew. Dragon's first manned test flight is expected to take place as 
                     early as 2018.</p>
-
-                <h3>Configurations: </h3>
+            </div>
+            
+            <h3 id="config">Configurations</h3>
+            
+            <div id="half">
                 <ul>
-                    <li>
+                    <li id="Cargo">
                         <h4>Cargo - Resupply the Space Station</h4>
                         <dl>
                             <dt>Delivery and Return Service</dt><dd>Dragon is the first commercial spacecraft to deliver cargo to the International Space Station and currently the only cargo spacecraft flying capable of returning significant amounts of cargo to Earth. Dragon accommodates pressurized cargo in the capsule as well as unpressurized cargo in its trunk.</dd>
                             <dt>Versatile Cargo Racks</dt><dd>The racks are a honeycomb carbon-aluminum construction designed for efficient packing in a zero-gravity environment. They accommodate a variety of standard-size NASA cargo bags as well as freezers for carrying materials such as biological samples.</dd>
                         </dl>
                     </li>
-                    <li>
+                    <li id="Crew">
                         <h4>Crew - Taking Humans into Space</h4>
                         <dl>
                             <dt>Partnership</dt><dd>Dragon was designed from the outset to fly humans to space. Under an agreement with NASA, SpaceX is making upgrades to Dragon to allow for crew carrying capability.</dd>
@@ -45,7 +56,7 @@
                             <dt>First Launch</dt><dd>Upgrades to Dragon are currently in progress. Dragon’s first manned test flight is expected to take place as early as 2018.</dd>
                         </dl>
                     </li>
-                    <li>
+                    <li id="Lab">
                         <h4>Dragon Lab - A free-flying microgravity labroatory</h4>
                         <dl>
                             <dt>Facilitating Research</dt><dd>DragonLab is a free-flying, unmanned platform designed for research and testing in a microgravity environment independent of the International Space Station.</dd>
@@ -54,6 +65,7 @@
                         </dl>
                     </li>
                 </ul>
+            </div>
             </content>
            
             <footer>

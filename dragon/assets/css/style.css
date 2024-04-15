@@ -8,5 +8,73 @@
 */
 
 body {
+    font-family: "Changa", sans-serif ;
+    background-color: black;
+    color:white;
+}
 
+
+
+
+
+/*Homepage*/
+div#description
+{
+display: block;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(/dragon/assets/imgs/Dragon_2_hover_test.jpg);
+padding: 600px;
+}
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    background-color: #B3B3B3;
+}
+
+nav li
+{
+ list-style-type: none;
+}
+
+#title
+{
+    text-align: center;
+}
+
+#logoi
+{
+    max-width: 200px;
+}
+
+
+#config
+{
+ display: flex;
+ justify-content: center;
+}
+
+div#half
+{
+    column-count: 3;
+}
+
+li#Cargo
+{
+    padding-top: 50px;
+    list-style-type:none;
+}
+
+li#Crew
+{
+    display: block;
+    padding-top: 50px;
+}
+
+li#Lab
+{
+    display: block;
+    padding-top: 50px;
 }
