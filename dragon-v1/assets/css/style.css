@@ -1,0 +1,128 @@
+/*color scheme
+#FFFFFF - white
+#DBDBDB - light gray
+#B3B3B3 - gray
+#8A8A8A - dark gray
+#616161 - almost black
+#000000 - black
+*/
+
+body {
+    font-family: "Changa", sans-serif ;
+    background-color: black;
+    color:white;
+}
+
+
+
+
+
+/*Homepage*/
+div#description
+{
+display: block;
+background-repeat: no-repeat;
+background-size: cover;
+background-image: url(/dragon-v1/assets/imgs/Dragon_2_hover_test.jpg);
+padding-bottom: 700px;
+}
+
+content#Description
+{
+    display: block;
+    padding-top: 300px;
+}
+
+nav
+{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+nav li
+{
+ list-style-type: none;
+}
+
+#title
+{
+    text-align: center;
+}
+
+#logoi
+{
+    max-width: 200px;
+}
+
+
+#config
+{
+ display: flex;
+ justify-content: center;
+}
+
+div#half
+{
+    column-count: 3;
+}
+
+li#Cargo
+{
+    padding-top: 50px;
+    list-style-type:none;
+}
+
+li#Crew
+{
+    display: block;
+    padding-top: 50px;
+}
+
+li#Lab
+{
+    display: block;
+    padding-top: 50px;
+}
+
+
+/*History Page*/
+
+div#content
+{
+    /* (top, right, bottom, left)*/
+    background-image:url(/dragon-v1/assets/imgs/dragon-capsule-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 200px 20px 600px 20px;
+}
+
+
+h3#tablet
+{
+    padding-top: 400px;
+    text-align: center;
+}
+
+table#table
+{
+
+    display:flex;
+    justify-content: center;
+    text-align: center;
+}
+
+div#table
+{
+    color:black;
+    background-image: url(/dragon-v1/assets/imgs/launch.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom:600px;
+
+}
+
+div#footer-container
+{
+    column-count: 4;
+}
