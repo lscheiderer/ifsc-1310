@@ -65,10 +65,8 @@ h2.social{
 
 nav.social ul{
     background-color: #15667C;
-    margin: 15px;
-    padding: 15px;; 
     display: flex;
-    flex-direction: column;
+    flex-direction: center;
 
 }
 
@@ -86,18 +84,23 @@ nav.social ul li{
     border: 6px dashed #219EC0;
     transition: 1s;
 }
-
-
-/* Internet */
-h2.inter{
-}
-
-nav.inter{
+#list
+{
     display: flex;
     justify-content: center;
 }
 
-nav.inter ul li{
+
+/* content */
+h2.inter{
+}
+
+div#content{
+    display: flex;
+    justify-content: center;
+}
+
+div#content ul li{
     font-size: larger;
     max-width: 250px;
     display: flex;
@@ -119,4 +122,12 @@ img.Gardenpic{
     border: rgba(0,0,0, 0);
     color:#fff;
     
+}
+#pe
+{
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px, 30px, 0px 30px;
+
 }
